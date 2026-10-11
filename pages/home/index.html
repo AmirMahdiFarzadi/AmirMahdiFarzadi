@@ -1,0 +1,215 @@
+<div class="homepage">
+    <div id="snow-container"></div>
+    <h6 class="h6">Smart Cooler</h6>
+    <h2 class="h2">Home</h2>
+    <div class="homestats__card-container">
+        <div class="homestats__card">
+            <span class="homestats__card-iconContainer">
+                <svg class="homestats__card-icon stats-temp" role="img"><use href="files/sprite.svg#temp"></use></svg>
+            </span>
+            <span class="homestats__card-text">INDOOR</span>
+            <span class="homestats__card-valueContainer">
+                <span class="homestats__card-value" data-key="sensors.indoorTemp">-</span>
+                <span class="homestats__card-unit" data-key="settings.tempUnit">°C</span>
+            </span>
+        </div>
+        <div class="homestats__card">
+            <span class="homestats__card-iconContainer">
+                <svg class="homestats__card-icon stats-sun" role="img"><use href="files/sprite.svg#sun"></use></svg>
+            </span>
+            <span class="homestats__card-text">OUTSIDE</span>
+            <span class="homestats__card-valueContainer">
+                <span class="homestats__card-value" data-key="weather.outdoorTemp">-</span>
+                <span class="homestats__card-unit" data-key="settings.tempUnit">°C</span>
+            </span>
+        </div>
+        <div class="homestats__card">
+            <span class="homestats__card-iconContainer">
+                <svg class="homestats__card-icon stats-droplet" role="img"><use href="files/sprite.svg#droplet"></use></svg>
+            </span>
+            <span class="homestats__card-text">HUMIDITY</span>
+            <span class="homestats__card-valueContainer">
+                <span class="homestats__card-value" data-key="sensors.humidity">-</span>
+                <span class="homestats__card-unit">% RH</span>
+            </span>
+        </div>
+        <div class="homestats__card">
+            <span class="homestats__card-iconContainer">
+                <svg class="homestats__card-icon stats-clock" role="img"><use href="files/sprite.svg#clock"></use></svg>
+            </span>
+            <span class="homestats__card-text">TIME</span>
+            <span class="homestats__card-valueContainer">
+                <span class="homestats__card-value" data-key="ui.time">--:--</span>
+            </span>
+        </div>
+    </div>
+    <div class="powerpanel__card">
+        <div class="powerpanel__card-LedContainer">
+            <div class="powerpanel__card-statusLed"></div>
+            <span class="powerpanel__card-statusLedText">STANDBY</span>
+        </div>
+        <div class="powerpanel__card-statusContainer">
+            <span class="powerpanel__card-status">
+                <span class="powerpanel__cardstatus-Text">PUMP</span>
+                <span id="powerpanel__cardstatus-PumpValue" class="powerpanel__cardstatus-Value">OFF</span>
+            </span>
+            <span class="vl"></span>
+            <span class="powerpanel__card-status">
+                <span class="powerpanel__cardstatus-Text">MOTOR</span>
+                <span id="powerpanel__cardstatus-MotorValue" class="powerpanel__cardstatus-Value">OFF</span>
+            </span>
+            <span class="vl"></span>
+            <span class="powerpanel__card-status">
+                <span class="powerpanel__cardstatus-Text">RUNTIME</span>
+                <span id="runtime-value" class="powerpanel__cardstatus-Value">--:--:--</span>
+            </span>
+        </div>
+            <span id="powerpanel-message" class="powerpanel__card-message">Cooler is running normally</span>
+    </div>
+    <div class="powerbutton__cards-container">
+        <button id="power-btn" class="powerbutton__card">
+            <span class="powerbutton__card-iconContainer">
+                <svg class="powerbutton__card-icon button-power" role="img"><use href="files/sprite.svg#power"></use></svg>
+            </span>
+            <span id="powerbutton-value" class="powerbutton__cardstatus-Value">Power On</span>
+        </button>
+        <button id="speed-btn" class="powerbutton__card" disabled>
+            <span class="powerbutton__card-iconContainer">
+                <svg class="powerbutton__card-icon button-bolt" role="img"><use href="files/sprite.svg#bolt"></use></svg>
+            </span>
+            <span id="speedbutton-value" class="powerbutton__cardstatus-Value">High Speed</span>
+        </button>
+    </div>
+    <div class="Section-container">
+        <h5 class="h5">Quick Actions</h5>
+        <div class="quickActionButton-container">
+            <button id="sleepbtn" class="quickActionButton">
+                <span class="quickActionButton-iconContainer">
+                    <svg class="quickActionButton-icon quick-moon" role="img"><use href="files/sprite.svg#moon"></use></svg>
+                </span>
+                <span id="sleepbtn-value" class="quickActionButton-Value">Sleep Mode</span>
+            </button>
+            <button id="30minbtn" class="quickActionButton">
+                <span class="quickActionButton-iconContainer">
+                    <svg class="quickActionButton-icon quick-stopwatch" role="img"><use href="files/sprite.svg#stopwatch"></use></svg>
+                </span>
+                <span id="30minbtn-value" class="quickActionButton-Value">Off in 30m</span>
+            </button>
+            <button id="pumpbtn" class="quickActionButton">
+                <span class="quickActionButton-iconContainer">
+                    <svg class="quickActionButton-icon quick-droplet" role="img"><use href="files/sprite.svg#droplet"></use></svg>
+                </span>
+                <span id="pumpbtn-value" class="quickActionButton-Value">Pump Only</span>
+            </button>
+        </div>
+    </div>
+    <div class="Section-container">
+        <h5 class="h5">Comfort Level</h5>
+        <div class="quickActionButton-container">
+            <div class="generalCard">
+                <div class="comfortInfo-container">
+                    <span class="comfortInfo-emoji" data-key="ui.comfortEmoji">😐</span>
+                    <div class="comfortInfo-details">
+                        <span class="comfortInfo-state" data-key="ui.comfortLabel">
+                            Warm
+                        </span>
+                        <div class="comfortInfo-Temp-container">
+                            <span class="comfortInfo-Temp" data-key="sensors.indoorTemp">-</span>
+                            <span class="comfortInfo-Temp" data-key="settings.shortTempUnit">°</span>
+                        </div>
+                        <div class="comfortInfo-detailsContainer">
+                            <span class="comfortInfo-detailsValues" data-key="sensors.indoorTemp">-</span>
+                            <span class="comfortInfo-detailsValues" data-key="settings.tempUnit">°C</span>
+                            <span class="comfortInfo-detailsValues">•</span>
+                            <span class="comfortInfo-detailsValues" data-key="sensors.humidity">-</span>
+                            <span class="comfortInfo-detailsValues">% RH</span>
+                        </div>
+                        <span class="comfortInfo-location">
+                            Indoor
+                        </span>
+                    </div>
+                </div>
+                <div class="comfortGauge-container">
+                    <div class="comfortGauge">
+                        <div class="comfortGauge-gradient"></div>
+                        <div class="comfortGauge-mask"></div>
+                    </div>
+                </div>
+                <div class="comfortGaugeInfo-container">
+                    <div class="comfortGaugeInfo-minicontainer">
+                        <span class="comfortGaugeInfo" data-key="settings.comfortMinTemp">18</span>
+                        <span class="comfortGaugeInfo" data-key="settings.shortTempUnit">°</span>
+                        <span class="comfortGaugeInfo">Cool</span>
+                    </div>
+                    <div class="comfortGaugeInfo-minicontainer">
+                        <span class="comfortGaugeInfo" data-key="settings.comfortMaxTemp">38</span>
+                        <span class="comfortGaugeInfo" data-key="settings.shortTempUnit">°</span>
+                        <span class="comfortGaugeInfo">Hot</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Section-container">
+        <h5 class="h5">Cooling Efficiency</h5>
+        <div class="quickActionButton-container">
+            <div class="generalCard">
+                <div class="powerpanel__card-statusContainer">
+                <span class="powerpanel__card-status">
+                    <span class="powerpanel__cardstatus-Text">OUTSIDE</span>
+                    <span class="efficiencypanel__value">
+                        <span class="efficiencypanel__value-outside" data-key="weather.outdoorTemp">--</span>
+                        <span class="efficiencypanel__value-outside" data-key="settings.shortTempUnit">°</span>
+                    </span>
+                </span>
+                <span class="vl"></span>
+                <span class="powerpanel__card-status">
+                    <span class="powerpanel__cardstatus-Text">Δ COOLING</span>
+                    <span class="efficiencypanel__value">
+                        <span class="efficiencypanel__value-delta" data-key="ui.coolingDelta">--</span>
+                        <span class="efficiencypanel__value-delta" data-key="settings.shortTempUnit">°</span>
+                    </span>
+                </span>
+                <span class="vl"></span>
+                <span class="powerpanel__card-status">
+                    <span class="powerpanel__cardstatus-Text">INSIDE</span>
+                        <span class="efficiencypanel__value">
+                            <span class="efficiencypanel__value-inside" data-key="sensors.indoorTemp">--</span>
+                            <span class="efficiencypanel__value-inside" data-key="settings.shortTempUnit">°</span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Section-container">
+        <h5 class="h5">Smart Suggestions</h5>
+        <div id="suggestions-container">
+            <div class="generalCard-Wmargin">
+                <div class="smartSuggestionsTitle-container">
+                    <svg class="suggestionIcon suggestion-info" data-key="ui.suggestion.icon" role="img"><use href="files/sprite.svg#info"></use></svg>
+                    <div class="suggestionText-container">
+                        <h4 class="suggestionTitle" data-key="ui.suggestion.title"></h4>
+                        <div class="smartSuggestionsMessage-container">
+                            <p class="suggestionMessage" data-key="ui.suggestion.message"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Section-container">
+        <h5 class="h5">Smart Suggestions</h5>
+        <div id="activity-history-section">
+            <div class="activity-history-card">
+                <div class="activity-history-item">
+                    <div class="activity-history-icon-container">
+                        <svg class="activityIcon activity-power" data-key="" role="img"><use href="files/sprite.svg#power"></use></svg>
+                    </div>
+                    <span class="activity-history-time">--:--</span>
+                    <span class="activity-history-name">-----</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

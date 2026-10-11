@@ -1,0 +1,166 @@
+<div class="homepage">
+    <h6 class="h6">Automation</h6>
+    <h2 class="h2">Scheduler</h2>
+    <div class="Section-container">
+        <div class="timeCard">
+            <span class="scheduleHeader">
+                <span class="scheduleHeader-iconContainer">
+                    <svg class="scheduleHeader-icon scheduleHeader-stopwatch" role="img"><use href="files/sprite.svg#stopwatch"></use></svg>
+                </span>
+                Timer
+            </span>
+            <span class="timeHeader">Action</span>
+            <div class="timeRadioButton-container">
+                <div class="timeRadioButton-column">
+                    <input class="timeRadioButton" type="radio" name="timeRadioButton" id="timeRadioButtonPumpOn" data-action="PUMP_ON">
+                    <label for="timeRadioButtonPumpOn" class="timeRadioButton-label">Pump On</label>
+                    <input class="timeRadioButton" type="radio" name="timeRadioButton" id="timeRadioButtonMotorOn" data-action="MOTOR_ON">
+                    <label for="timeRadioButtonMotorOn" class="timeRadioButton-label">Motor On</label>
+                </div>
+                <div class="timeRadioButton-column">
+                    <input class="timeRadioButton" type="radio" name="timeRadioButton" id="timeRadioButtonLowSpeed" data-action="LOW_SPEED">
+                    <label for="timeRadioButtonLowSpeed" class="timeRadioButton-label">Low Speed</label>
+                    <input class="timeRadioButton" type="radio" name="timeRadioButton" id="timeRadioButtonHighSpeed" data-action="HIGH_SPEED">
+                    <label for="timeRadioButtonHighSpeed" class="timeRadioButton-label">High Speed</label>
+                </div>
+            </div>
+                <input class="timeRadioButton" type="radio" name="timeRadioButton" id="timeRadioButtonPowerOff" data-action="POWER_OFF">
+                <label for="timeRadioButtonPowerOff" class="timeRadioButton-label">Power Off</label>
+            <span class="timeHeaderTime">Time</span>
+            <div class="timePicker" data-id="timePicker" data-time="00:00">
+                <div class="scheduleHour">
+                    <div class="scheduleHr-up">
+                        <span id="scheduleHourUp" class="schedule-iconContainer">
+                            <svg class="schedule-icon schedule-chevron-up" role="img"><use href="files/sprite.svg#chevron-up"></use></svg>
+                        </span>
+                    </div>
+                    <div class="wheelViewport hourViewport">
+                        <div class="wheelTrack hourTrack">
+                        </div>
+                    </div>
+                    <div  class="scheduleHr-down">
+                        <span id="scheduleHourDown" class="schedule-iconContainer">
+                            <svg class="schedule-icon schedule-chevron-down" role="img"><use href="files/sprite.svg#chevron-down"></use></svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="scheduleSeperator">:</div>
+                <div class="scheduleMinute">
+                    <div class="scheduleMin-up">
+                        <span id="scheduleMinUp" class="schedule-iconContainer">
+                            <svg class="schedule-icon schedule-chevron-up" role="img"><use href="files/sprite.svg#chevron-up"></use></svg>
+                        </span>
+                    </div>
+                    <div class="wheelViewport minuteViewport">
+                        <div class="wheelTrack minuteTrack">
+                        </div>
+                    </div>
+                    <div class="scheduleMin-down">
+                        <span id="scheduleMinDown" class="schedule-iconContainer">
+                            <svg class="schedule-icon schedule-chevron-down" role="img"><use href="files/sprite.svg#chevron-down"></use></svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <button class="scheduleTimerConfirm">Add Timer</button>
+        </div>
+    </div>
+    <div class="timeCard">
+            <span class="scheduleHeader">
+                <span class="scheduleHeader-iconContainer">
+                    <svg class="scheduleHeader-icon scheduleHeader-calendar" role="img"><use href="files/sprite.svg#calendar"></use></svg>
+                </span>
+                Schedule List
+            </span>
+            <div class="scheduleList">
+                <div class="scheduleList-item">
+                    <span class="scheduleList-iconContainer">
+                        <svg class="scheduleList-icon scheduleHeader-droplet" role="img"><use href="files/sprite.svg#droplet"></use></svg>
+                    </span>
+                    <div class="scheduleList-valueContainer">
+                        <div class="scheduleList-value">
+                            Pump On
+                        </div>
+                        <div class="scheduleList-time">
+                            02:43
+                        </div>
+                    </div>
+                    <div class="scheduleList-buttonContainer">
+                        <button class="scheduleEdit">
+                            <svg class="scheduleButton-icon scheduleButton-Edit" role="img"><use href="files/sprite.svg#pencil"></use></svg>
+                        </button>
+                        <button class="scheduleDelete">
+                            <svg class="scheduleButton-icon scheduleButton-Delete" role="img"><use href="files/sprite.svg#trash"></use></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>    
+    </div>
+    
+    
+
+    <div class="modalOverlay hidden">
+        <div class="modalCard">
+            
+            <div class="modalTitle">
+                <svg class="modal-icon modal-exclamation-circle" role="img"><use href="files/sprite.svg#exclamation-circle"></use></svg>
+                Invalid Schedule
+            </div>
+            <div class="modalMessage">
+            </div>
+            <button class="modalButton">
+                OK
+            </button>
+        </div>
+    </div>
+    <div class="timeModalOverlay hidden">
+        <div class="timeModalCard">
+            <span class="timeHeaderTime">Edit Schedule</span>
+            <div class="timePicker" data-id="timePickerEditor" data-time="00:00">
+                <div class="scheduleHour">
+                    <div class="scheduleHr-up">
+                        <span class="schedule-iconContainer">
+                            <svg class="schedule-icon schedule-chevron-up" role="img"><use href="files/sprite.svg#chevron-up"></use></svg>
+                        </span>
+                    </div>
+                    <div class="wheelViewport hourViewport">
+                        <div class="wheelTrack hourTrack">
+                        </div>
+                    </div>
+                    <div  class="scheduleHr-down">
+                        <span class="schedule-iconContainer">
+                            <svg class="schedule-icon schedule-chevron-down" role="img"><use href="files/sprite.svg#chevron-down"></use></svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="scheduleSeperator">:</div>
+                <div class="scheduleMinute">
+                    <div class="scheduleMin-up">
+                        <span class="schedule-iconContainer">
+                            <svg class="schedule-icon schedule-chevron-up" role="img"><use href="files/sprite.svg#chevron-up"></use></svg>
+                        </span>
+                    </div>
+                    <div class="wheelViewport minuteViewport">
+                        <div class="wheelTrack minuteTrack">
+                        </div>
+                    </div>
+                    <div class="scheduleMin-down">
+                        <span class="schedule-iconContainer">
+                            <svg class="schedule-icon schedule-chevron-down" role="img"><use href="files/sprite.svg#chevron-down"></use></svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="timeModalButton-container">
+                <button class="scheduleTimerCancel">Cancel</button>
+                <button class="scheduleTimerEdit">Save</button>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="scheduleWarning-container">
+        <div class="scheduleWarning-iconContainer">
+            <svg class="scheduleWarning-icon scheduleWarning-alert-triangle" role="img"><use href="files/sprite.svg#alert-triangle"></use></svg>
+        </div>
+        <div class="scheduleWarning-message">Warning message</div>
+    </div> -->
+</div> 

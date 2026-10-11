@@ -1,0 +1,95 @@
+<div class="homepage">
+    <h6 class="h6">Analytics</h6>
+    <h2 class="h2">Climate</h2>
+    <div class="Tabs">
+        <div class="activeTab"></div>
+        <button class="tabButton">Today</button>
+        <button class="tabButton">This Week</button>
+    </div>
+    <div class="Section-container">
+        <div class="canvasCard">
+            <div class="canvasRow">
+                <span class="CanvasHeader">Runtime Breakdown</span>
+                <div class="canvasGuide-container">
+                    <div class="canvasGuideCircle canvasGuide-indoor"></div>
+                    <span class="canvasGuide">Indoor</span>
+                </div>
+                <div class="canvasGuide-container">
+                    <div class="canvasGuideCircle canvasGuide-outdoor"></div>
+                    <span class="canvasGuide">Outdoor</span>
+                </div>
+            </div>
+            <canvas id="temperatureChart"></canvas>
+        </div>
+    </div>
+    <div class="tempDuoCard-container">
+        <div class="tempDuoCard">
+            <div class="tempDuoCardRow">
+                <span class="tempDuoCardHeader tempDuoCardHeader-indoor">Indoor</span>
+            </div>
+            <div class="tempDuoCard-content">
+                <div class="tempDuoCard-tempContainer">
+                    <span class="tempDuoCard-tempName">MIN</span>
+                    <div class="tempDuoCard-ValueRow">
+                        <span class="tempDuoCard-tempValue" data-key="indoor-min"></span>
+                        <span class="tempDuoCard-tempUnit" data-key="settings.tempUnit">°C</span>
+                    </div>
+                </div>
+                <div class="tempDuoCard-tempContainer">
+                    <span class="tempDuoCard-tempName">AVG</span>
+                    <div class="tempDuoCard-ValueRow">
+                        <span class="tempDuoCard-tempValue" data-key="indoor-avg"></span>
+                        <span class="tempDuoCard-tempUnit" data-key="settings.tempUnit">°C</span>
+                    </div>
+                </div>
+                <div class="tempDuoCard-tempContainer">
+                    <span class="tempDuoCard-tempName">MAX</span>
+                    <div class="tempDuoCard-ValueRow">
+                        <span class="tempDuoCard-tempValue" data-key="indoor-max"></span>
+                        <span class="tempDuoCard-tempUnit" data-key="settings.tempUnit">°C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tempDuoCard">
+            <div class="tempDuoCardRow">
+                <span class="tempDuoCardHeader tempDuoCardHeader-outdoor">Outdoor</span>
+            </div>
+            <div class="tempDuoCard-content">
+                <div class="tempDuoCard-tempContainer">
+                    <span class="tempDuoCard-tempName">MIN</span>
+                    <div class="tempDuoCard-ValueRow">
+                        <span class="tempDuoCard-tempValue" data-key="outdoor-min"></span>
+                        <span class="tempDuoCard-tempUnit" data-key="settings.tempUnit">°C</span>
+                    </div>
+                </div>
+                <div class="tempDuoCard-tempContainer">
+                    <span class="tempDuoCard-tempName">AVG</span>
+                    <div class="tempDuoCard-ValueRow">
+                        <span class="tempDuoCard-tempValue" data-key="outdoor-avg"></span>
+                        <span class="tempDuoCard-tempUnit" data-key="settings.tempUnit">°C</span>
+                    </div>
+                </div>
+                <div class="tempDuoCard-tempContainer">
+                    <span class="tempDuoCard-tempName">MAX</span>
+                    <div class="tempDuoCard-ValueRow">
+                        <span class="tempDuoCard-tempValue" data-key="outdoor-max"></span>
+                        <span class="tempDuoCard-tempUnit" data-key="settings.tempUnit">°C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Section-container">
+        <div class="canvasCard">
+            <div class="canvasRow">
+                <span class="CanvasHeader">Runtime Breakdown</span>
+                <div class="canvasGuide-container">
+                    <div class="canvasGuideCircle canvasGuide-humidity"></div>
+                    <span class="canvasGuide">Humidity</span>
+                </div>
+            </div>
+            <canvas id="humidityChart"></canvas>
+        </div>
+    </div>
+</div>

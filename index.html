@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+    <title>title</title>
+    <meta name="theme-color" content="#050d1a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="manifest" href="manifest.json?v=2">
+    <link rel="apple-touch-icon" href="iconApple192x192.png">
+    
+</head>
+<body>
+    <main id="app"></main>
+
+    <nav class="nav">
+        <a data-page="home" class="nav__link nav__link--active">
+            <span class="nav__icon-box">
+                <svg class="nav__icon home" role="img"><use href="files/sprite.svg#home"></use></svg>
+            </span>
+            <span class="nav__text">Home</span>
+        </a>
+        <a data-page="stats" class="nav__link">
+            <span class="nav__icon-box">
+                <svg class="nav__icon stats" role="img"><use href="files/sprite.svg#stats"></use></svg>
+            </span>
+            <span class="nav__text">Stats</span>
+        </a>
+        <a data-page="climate" class="nav__link">
+            <span class="nav__icon-box">
+                <svg class="nav__icon temp" role="img"><use href="files/sprite.svg#temp"></use></svg>
+            </span>
+            <span class="nav__text">Climate</span>
+        </a>
+        <a data-page="schedule" class="nav__link">
+            <span class="nav__icon-box">
+                <svg class="nav__icon navcalendar" role="img"><use href="files/sprite.svg#calendar"></use></svg>
+            </span>
+            <span class="nav__text">Schedule</span>
+        </a>
+        <a data-page="settings" class="nav__link">
+            <span class="nav__icon-box">
+                <svg class="nav__icon settings" role="img"><use href="files/sprite.svg#settings"></use></svg>
+            </span>
+            <span class="nav__text">Settings</span>
+        </a>
+    </nav>
+    
+    <script src="files/chartjs/chart.umd.min.js"></script>
+    <script type="module" src="src/index.js"></script>
+</body>
+</html>

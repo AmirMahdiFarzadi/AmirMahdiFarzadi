@@ -1,0 +1,126 @@
+<div class="homepage">
+    <h6 class="h6">USAGE</h6>
+    <h2 class="h2">Statistics</h2>
+    <div class="statisticsDuoCard-container">
+        <div class="statisticsDuoCard">
+            <span class="statisticsDuoCard-iconContainer">
+                <svg class="statisticsDuoCard-icon statistics-bolt" role="img"><use href="files/sprite.svg#bolt"></use></svg>
+            </span>
+            <span class="statisticsDuoCard-valueContainer">
+                <span id="statisticsDuoCard-value-letterspace" class="statisticsDuoCard-value" data-key="today-kwh">2.4</span>
+            </span>
+            <span class="statisticsDuoCard-text">kWh Today</span>
+        </div>
+        <div class="statisticsDuoCard">
+            <span class="statisticsDuoCard-iconContainer">
+                <svg class="statisticsDuoCard-icon statistics-clock" role="img"><use href="files/sprite.svg#clock"></use></svg>
+            </span>
+            <span class="statisticsDuoCard-valueContainer">
+                <span class="statisticsDuoCard-value" data-key="today-hour">6</span>
+                <span class="statisticsDuoCard-unit">H</span>
+                <span class="statisticsDuoCard-space"></span>
+                <span class="statisticsDuoCard-value" data-key="today-minute">35</span>
+                <span class="statisticsDuoCard-unit">M</span>
+            </span>
+            <span class="statisticsDuoCard-text">Runtime</span>
+        </div>
+    </div>
+    <div class="Section-container">
+        <div class="generalCard">
+            <span class="runtimeStatsHeader">Runtime Breakdown</span>
+            <div class="runtimeStats-container">
+                <div class="runtimeStat-container">
+                    <div class="runtimeStat-circle runtimeStat-circleDay">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="runtimeStat-bg" cx="50" cy="50" r="42"></circle>
+                            <circle class="runtimeStat-progress runtimeStat-progressDay" cx="50" cy="50" r="42"></circle>
+                        </svg>
+                        <div class="runtimeStat-center">
+                            <span class="runtimeStat-number" data-key="today-hour"></span>
+                            <span class="runtimeStat-number">H</span>
+                            <span class="runtimeStat-space"></span>
+                            <span class="runtimeStat-number" data-key="today-minute"></span>
+                            <span class="runtimeStat-number">M</span>
+                        </div>
+                    </div>
+                    <span class="runtimeStat-name">Today</span>
+                </div>
+                <div class="runtimeStat-container">
+                    <div class="runtimeStat-circle runtimeStat-circleWeek">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="runtimeStat-bg" cx="50" cy="50" r="42"></circle>
+                            <circle class="runtimeStat-progress runtimeStat-progressWeek" cx="50" cy="50" r="42"></circle>
+                        </svg>
+                        <div class="runtimeStat-center">
+                            <span class="runtimeStat-number" data-key="week-runtime"></span>
+                            <span class="runtimeStat-number">H</span>
+                        </div>
+                    </div>
+                    <span class="runtimeStat-name">This Week</span>
+                </div>
+                <div class="runtimeStat-container">
+                    <div class="runtimeStat-circle runtimeStat-circleMonth">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="runtimeStat-bg" cx="50" cy="50" r="42"></circle>
+                            <circle class="runtimeStat-progress runtimeStat-progressMonth" cx="50" cy="50" r="42"></circle>
+                        </svg>
+                        <div class="runtimeStat-center">
+                            <span class="runtimeStat-number" data-key="month-runtime"></span>
+                            <span class="runtimeStat-number">H</span>
+                        </div>
+                    </div>
+                    <span class="runtimeStat-name">This Month</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Section-container">
+        <div class="generalCard">
+            <div class="costStat-Row">
+                <span class="costStat-header">Electricity Cost</span>
+                <span class="costStat-iconContainer">
+                <svg class="costStat-icon costStat-bolt" role="img"><use href="files/sprite.svg#bolt"></use></svg>
+                </span>
+            </div>
+            <div class="costStat-Row">
+                <span class="costStat-name">Today</span>
+                <span>
+                    <span class="costStat-value" data-key="day-cost">90</span>
+                    <span class="costStat-value">IRT</span>
+                </span>
+            </div>
+            <div class="comfortGauge-container">
+                <div class="powerGauge powerGauge-day">
+                    <div class="powerGauge-fill"></div>
+                    <div class="powerGauge-mask"></div>
+                </div>
+            </div>
+            <div class="costStat-Row">
+                <span class="costStat-name">This Week</span>
+                <span>
+                    <span class="costStat-value" data-key="week-cost">900</span>
+                    <span class="costStat-value">IRT</span>
+                </span>
+            </div>
+            <div class="comfortGauge-container">
+                <div class="powerGauge powerGauge-week">
+                    <div class="powerGauge-fill"></div>
+                    <div class="powerGauge-mask"></div>
+                </div>
+            </div>
+            <div class="costStat-Row">
+                <span class="costStat-name">This Month</span>
+                <span>
+                    <span class="costStat-value" data-key="month-cost">9000</span>
+                    <span class="costStat-value">IRT</span>
+                </span>
+            </div>
+            <div class="comfortGauge-container">
+                <div class="powerGauge powerGauge-month">
+                    <div class="powerGauge-fill"></div>
+                    <div class="powerGauge-mask"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

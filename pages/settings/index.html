@@ -1,0 +1,150 @@
+<div class="homepage">
+    <h6 class="h6">Configuration</h6>
+    <h2 class="h2">Settings</h2>
+    <div class="Section-container">
+        <div class="settingsCard">
+            <span class="settingHeader">
+                <span class="settingHeader-iconContainer">
+                    <svg class="settingHeader-icon settingHeader-temp" role="img"><use href="files/sprite.svg#temp"></use></svg>
+                </span>
+                Comfort
+            </span>
+            <div class="settingsInputConatiner">
+                <div class="settingsMinMaxTemp-container">
+                    <span class="settingsMinMaxTemp-minLabel">Min Temperature</span>
+                    <span class="settingsMinMaxTemp-inputContainer">
+                        <input type="number" name="" id="settingsMinMaxTemp-minInput" class="settingsMinMaxTemp-Input">
+                        <span class="settingsInputSuffix">°C</span>
+                    </span>
+                </div>
+                <div class="settingsMinMaxTemp-container">
+                    <span class="settingsMinMaxTemp-minLabel">Max Temperature</span>
+                    <span class="settingsMinMaxTemp-inputContainer">
+                        <input type="number" name="" id="settingsMinMaxTemp-maxInput" class="settingsMinMaxTemp-Input">
+                        <span class="settingsInputSuffix">°C</span>
+                    </span>
+                </div>
+            </div>
+            <div class="settingsTempRange">
+                <div class="settingsTempRangeValues">
+                    <span class="settingsTempRangeLabel">0°C</span>
+                    <span class="settingsTempRangeLabel">60°C</span>
+                </div>
+                <div class="settingsTempRangeTrack">
+                    <div class="settingsTempRangeFill"></div>
+                </div>
+            </div>
+        </div>
+        <div class="settingsCard">
+            <span class="settingHeader">
+                <span class="settingHeader-iconContainer">
+                    <svg class="settingHeader-icon settingHeader-temp" role="img"><use href="files/sprite.svg#map-pin"></use></svg>
+                </span>
+                Weather Location
+            </span>
+            <div class="settingsInputConatiner">
+                <div class="settingsMinMaxTemp-container">
+                    <span class="settingsMinMaxTemp-minLabel">Latitude</span>
+                    <span class="settingsMinMaxTemp-inputContainer">
+                        <input type="number" name="" id="settings-latitude" class="settingsMinMaxTemp-Input">
+                        <span class="settingsInputSuffix">°N</span>
+                    </span>
+                </div>
+                <div class="settingsMinMaxTemp-container">
+                    <span class="settingsMinMaxTemp-minLabel">Longitude</span>
+                    <span class="settingsMinMaxTemp-inputContainer">
+                        <input type="number" name="" id="settings-longitude" class="settingsMinMaxTemp-Input">
+                        <span class="settingsInputSuffix">°E</span>
+                    </span>
+                </div>
+            </div>
+            <button class="locationAutoBtn">
+                <span class="settingHeader-iconContainer">
+                    <svg class="settingHeader-icon settingHeader-temp" role="img"><use href="files/sprite.svg#map-pin"></use></svg>
+                </span>
+                Use Current Location
+            </button>
+        </div>
+        <div class="settingsCard">
+            <span class="settingHeader">
+                <span class="settingHeader-iconContainer">
+                    <svg class="settingHeader-icon settingHeader-temp" role="img"><use href="files/sprite.svg#calendar"></use></svg>
+                </span>
+                Calendar
+            </span>
+            <span class="setHeader">First Day of Week</span>
+            <div class="settingsWeekdays-container">
+                <input class="settingsWeekdays-radioButton" type="radio" name="Weekdays-radioButton" id="Weekdays-radioButton-1">
+                <label for="Weekdays-radioButton-1" class="Weekdays-radioButton-label">Sa</label>
+                <input class="settingsWeekdays-radioButton" type="radio" name="Weekdays-radioButton" id="Weekdays-radioButton-2">
+                <label for="Weekdays-radioButton-2" class="Weekdays-radioButton-label">Su</label>
+                <input class="settingsWeekdays-radioButton" type="radio" name="Weekdays-radioButton" id="Weekdays-radioButton-3">
+                <label for="Weekdays-radioButton-3" class="Weekdays-radioButton-label">Mo</label>
+                <input class="settingsWeekdays-radioButton" type="radio" name="Weekdays-radioButton" id="Weekdays-radioButton-4">
+                <label for="Weekdays-radioButton-4" class="Weekdays-radioButton-label">Tu</label>
+                <input class="settingsWeekdays-radioButton" type="radio" name="Weekdays-radioButton" id="Weekdays-radioButton-5">
+                <label for="Weekdays-radioButton-5" class="Weekdays-radioButton-label">We</label>
+                <input class="settingsWeekdays-radioButton" type="radio" name="Weekdays-radioButton" id="Weekdays-radioButton-6">
+                <label for="Weekdays-radioButton-6" class="Weekdays-radioButton-label">Th</label>
+                <input class="settingsWeekdays-radioButton" type="radio" name="Weekdays-radioButton" id="Weekdays-radioButton-7">
+                <label for="Weekdays-radioButton-7" class="Weekdays-radioButton-label">Fr</label>
+            </div>
+            <span class="setHeader">Calendar Type</span>
+            <div class="settingsTabs">
+                <div class="settingsActiveTab"></div>
+                <button class="settingsTabButton" data-calendar="jalali">Jalali</button>
+                <button class="settingsTabButton" data-calendar="gregorian">Gregorian</button>
+            </div>
+        </div>
+        <div class="settingsCard">
+            <span class="settingHeader">
+                <span class="settingHeader-iconContainer">
+                    <svg class="settingHeader-icon settingHeader-temp" role="img"><use href="files/sprite.svg#bolt"></use></svg>
+                </span>
+                Cooler Configuration
+            </span>
+            <div class="settingsInputConatiner">
+                <div class="settingsMinMaxTemp-container">
+                    <span class="settingsMinMaxTemp-minLabel">Pump Power</span>
+                    <span class="settingsMinMaxTemp-inputContainer">
+                        <input type="number" name="" id="settings-PumpPower" class="settingsMinMaxTemp-Input">
+                        <span class="settingsInputSuffix">kWh</span>
+                    </span>
+                </div>
+                <div class="settingsMinMaxTemp-container">
+                    <span class="settingsMinMaxTemp-minLabel">Motor Low Speed</span>
+                    <span class="settingsMinMaxTemp-inputContainer">
+                        <input type="number" name="" id="settings-MotorLow" class="settingsMinMaxTemp-Input">
+                        <span class="settingsInputSuffix">kWh</span>
+                    </span>
+                </div>
+            </div>
+            <div class="settingsDivider"></div>
+            <div class="settingsInputConatiner">
+                <div class="settingsMinMaxTemp-container">
+                    <span class="settingsMinMaxTemp-minLabel">Motor High Speed</span>
+                    <span class="settingsMinMaxTemp-inputContainer">
+                        <input type="number" name="" id="settings-MotorHigh" class="settingsMinMaxTemp-Input">
+                        <span class="settingsInputSuffix">kWh</span>
+                    </span>
+                </div>
+                <div class="settingsMinMaxTemp-container">
+                    <span class="settingsMinMaxTemp-minLabel">Electricity Price</span>
+                    <span class="settingsMinMaxTemp-inputContainer">
+                        <input type="number" name="" id="settings-Price" class="settingsMinMaxTemp-Input">
+                        <span class="settingsInputSuffixSmall">T/kWh</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <button class="SettingsConfirm">Save Settings</button>
+        <div class="footer">
+            <span class="footerHead">
+                SMART COOLER PWA
+            </span>
+            <span class="footerDescription">
+                v1.0.0 - Home made Smart Cooler Controller
+            </span>
+        </div>
+    </div>
+</div>
